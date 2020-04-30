@@ -57,12 +57,12 @@ void HttpStream::sendHttpRequest()
         data.append(String(i),2);
         data.append(":",1);
         data.append(String(static_cast<int>(Decibels::gainToDecibels(this->channel[i].RMSLevelMeanPerSecond))),3);
-        data.append("\n",2);
+        data.append(",\n",2);
     }
     data.append("}",1);
     
     log->writeToLog(data);
-    
+
     if(curl)
     {
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "POST");
