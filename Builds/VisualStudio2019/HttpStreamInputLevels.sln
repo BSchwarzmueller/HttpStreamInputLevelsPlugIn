@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2019
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HttpStreamInputLevels - Standalone Plugin", "HttpStreamInputLevels_StandalonePlugin.vcxproj", "{C02B3691-8020-79FA-B393-C07C6C36BFCE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987} = {DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HttpStreamInputLevels - VST3", "HttpStreamInputLevels_VST3.vcxproj", "{325EA113-BD93-9FF6-0639-9E3A9C102076}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987} = {DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HttpStreamInputLevels - Shared Code", "HttpStreamInputLevels_SharedCode.vcxproj", "{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{325EA113-BD93-9FF6-0639-9E3A9C102076}.Debug|x64.ActiveCfg = Debug|x64
+		{325EA113-BD93-9FF6-0639-9E3A9C102076}.Debug|x64.Build.0 = Debug|x64
+		{325EA113-BD93-9FF6-0639-9E3A9C102076}.Release|x64.ActiveCfg = Release|x64
+		{325EA113-BD93-9FF6-0639-9E3A9C102076}.Release|x64.Build.0 = Release|x64
+		{C02B3691-8020-79FA-B393-C07C6C36BFCE}.Debug|x64.ActiveCfg = Debug|x64
+		{C02B3691-8020-79FA-B393-C07C6C36BFCE}.Debug|x64.Build.0 = Debug|x64
+		{C02B3691-8020-79FA-B393-C07C6C36BFCE}.Release|x64.ActiveCfg = Release|x64
+		{C02B3691-8020-79FA-B393-C07C6C36BFCE}.Release|x64.Build.0 = Release|x64
+		{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}.Debug|x64.ActiveCfg = Debug|x64
+		{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}.Debug|x64.Build.0 = Debug|x64
+		{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}.Release|x64.ActiveCfg = Release|x64
+		{DF598A6F-AF1B-5A7B-AAF1-3076C7A1C987}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
