@@ -49,6 +49,7 @@ void HttpStream::sendHttpRequest()
     
     String data = "{\n";
     
+    // Die selbst gebauten JSON sind doch immer noch die schönsten
     for(int i = 0; i < NUMBER_OF_CHANNELS; i++)
     {
         // Um die Werte lesbarer zu machen werden die normalisierten Pegelwerte in dBFS umgerechnet
@@ -57,7 +58,9 @@ void HttpStream::sendHttpRequest()
         data.append(String(i),2);
         data.append(":",1);
         data.append(String(static_cast<int>(Decibels::gainToDecibels(this->channel[i].RMSLevelMeanPerSecond))),3);
-        data.append(",\n",2);
+        if(i != NUMBER_OF_CHANNELS - 1)
+            data.append(",",1);
+        data.append("\n",2);
     }
     data.append("}",1);
     
